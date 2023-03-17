@@ -373,7 +373,7 @@ class XRayTraceContext{
             return;
         }
         String[] traceParts = traceId.split(";");
-        if(traceParts.length != 3){
+        if(traceParts.length < 3){
             DDLogger.getLoggerImpl().error ("Malformed _X_AMZN_TRACE_ID value: "+ traceId);
             return;
         }
