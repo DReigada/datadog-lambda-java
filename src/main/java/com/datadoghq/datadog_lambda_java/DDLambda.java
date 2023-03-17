@@ -258,7 +258,7 @@ public class DDLambda {
             spanBuilder.withTag("service", "aws.lambda");
             spanBuilder.withTag("function_arn", functionArn.toLowerCase());
             spanBuilder.withTag("cold_start", ColdStart.getColdStart(cxt));
-            spanBuilder.withTag("datadog_lambda", BuildConfig.datadog_lambda_version);
+            spanBuilder.withTag("datadog_lambda", "custom-fork");
             spanBuilder.withTag("resource_names", functionName);
             spanBuilder.withTag("functionname", functionName.toLowerCase());
             spanBuilder.withTag("function_version", functionVersion);
